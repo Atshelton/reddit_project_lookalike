@@ -1,0 +1,20 @@
+<h1>Welome to My Red</h1>
+
+<% @links.each do |link| %>
+<p>
+  <%= link_to "#{link.name}", link_path(id: link.id) %>
+</p>
+
+<%= link_to "Edit", edit_link_path(id: link.id) %>
+<%= link_to "Delete Link", link_path(id: link.id), method: :delete %>
+
+<% end %>
+
+
+
+
+
+<%= form_for @link do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
