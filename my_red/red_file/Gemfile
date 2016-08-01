@@ -53,4 +53,6 @@ group :production do
   gem 'pg'
 end
 
+gem 'puma'
+
 ruby '2.3.1'
