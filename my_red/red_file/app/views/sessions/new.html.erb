@@ -1,11 +1,6 @@
 <h1>Welcome Please sign in Below</h1>
-
-
-
-
-
-
-
-<p>
-  <%= link_to links_path %>
-</p>
+<%= form_tag("/sessions") do %>
+<%= label_tag :email %>
+<%= text_field_tag :email %>
+<%= submit_tag "Login!" %>
+<% end %>

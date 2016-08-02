@@ -8,14 +8,9 @@
 </head>
 <body>
   <main>
-
-    <% if current_user %>
-      Current Red user: <%= current_user %>
-      <%= link_to "Log Out", login_path%>
-    <% else %>
-      <%= link_to "Sign Up", new_user_path %>
-      <%= link_to "Existing User?", login_path %>
-    <% end %>
+      <h5>
+      Current Red user: <%= current_user.name %>
+    </h5>
 
     <%= yield %>
 

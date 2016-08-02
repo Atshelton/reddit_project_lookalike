@@ -1,4 +1,20 @@
+<table>
+  <tbody>
+  <th>
+    Status
+  </th>
+  <td>
+<p>
+  Are you an existing user?  <%= link_to "Login!",  new_session_path %>
+</p>
+
+<p>
+  Are you a new user?  <%= link_to "New Account!", new_user_path %>
+</p>
+</td>
+
 <h1>Welome to My Red</h1>
+
 
 <% @links.each do |link| %>
 <p>
@@ -10,11 +26,10 @@
 
 <% end %>
 
-
-
-
-
 <%= form_for @link do |f| %>
+  <%  %>
   <%= f.text_field :name %>
   <%= f.submit %>
 <% end %>
+</tbody>
+</table>
